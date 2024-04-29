@@ -51,6 +51,10 @@
 
 Este repositório contém o experimento conduzido...
 
+<div align="center">
+    <img src="images/background.gif" alt="Logo" height="300">
+</div>
+
 ## Git Clone
 
 Para obter uma cópia local deste repositório, utilize o seguinte comando:
