@@ -2,8 +2,6 @@ import numpy as np
 from sklearn.model_selection import learning_curve
 import matplotlib.pyplot as plt
 
-from sklearn.model_selection import KFold, train_test_split
-
 seed = 777
 rng = np.random.default_rng(seed)
 

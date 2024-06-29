@@ -17,7 +17,6 @@ def get_best_params(pipeline: Pipeline, param_dist: dict, kfold: KFold, X_train:
     """
 
     random_search = RandomizedSearchCV(pipeline, param_distributions=param_dist, n_iter=20, cv=kfold, scoring='accuracy', error_score='raise', random_state=rng_int())
-
     random_search.fit(X_train, y_train)
 
     best_model = random_search.best_estimator_
