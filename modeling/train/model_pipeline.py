@@ -27,11 +27,9 @@ def get_best_params(pipeline: Pipeline, param_dist: dict, kfold: KFold, X_train:
     return best_model, best_params, best_score
 
 
-def dump_model(best_clf, model_path, X_test, y_test):
+def dump_model(best_clf, model_path, best_score):
     """
 
     """
 
-    y_pred = best_clf.predict(X_test)
-    a = accuracy_score(y_test, y_pred)
-    joblib.dump(best_clf, f'{model_path}_a{int(100*a)}.pkl')
+    joblib.dump(best_clf, f'{model_path}_a{int(100*best_score)}.pkl')

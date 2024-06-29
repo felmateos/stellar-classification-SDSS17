@@ -31,8 +31,8 @@ def plot_learning_curve(estimator, X, y, cv, scoring='accuracy'):
     plt.ylim(0.0, 1.1)
     plt.grid()
     
-    plt.plot(train_sizes, train_scores_mean, 'o-', color="r", label="Pontuação de Treinamento")
-    plt.plot(train_sizes, test_scores_mean, 'o-', color="g", label="Pontuação de Validação") 
+    plt.plot(train_sizes, train_scores_mean, 'o-', color='c', label='Pontuação de Treinamento')
+    plt.plot(train_sizes, test_scores_mean, 'o-', color='m', label='Pontuação de Validação') 
     
     plt.legend(loc="best")
     plt.show()
