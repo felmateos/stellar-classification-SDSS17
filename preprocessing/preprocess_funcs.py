@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from scipy.stats import zscore
-from sklearn.preprocessing import OneHotEncoder
 from itertools import combinations
 
 

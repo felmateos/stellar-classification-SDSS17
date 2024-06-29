@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import RandomizedSearchCV, KFold
-from sklearn.metrics import accuracy_score
 import joblib
 
 seed = 777
