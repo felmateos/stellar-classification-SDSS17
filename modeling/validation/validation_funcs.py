@@ -27,6 +27,7 @@ def plot_learning_curve(estimator, X, y, cv, scoring='accuracy'):
     plt.xlabel("Tamanho do Conjunto de Treinamento")
     plt.ylabel("Acurácia")
     plt.ylim(0.0, 1.1)
+    plt.xscale('log')
     plt.grid()
     
     plt.plot(train_sizes, train_scores_mean, '.-', color='c', label='Pontuação de Treinamento')
